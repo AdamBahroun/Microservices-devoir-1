@@ -1,0 +1,22 @@
+spring:
+  application:
+    name: voiture
+  datasource:
+    url: 'jdbc:h2:mem:voituredb'
+  h2:
+    console:
+      enabled: true
+  jpa:
+    show-sql: true
+    hibernate:
+      ddl-auto: update
+  cloud:
+    config:
+      enabled: false
+    discovery:
+      enabled: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
